@@ -1,5 +1,3 @@
-
-import './App.css';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -8,7 +6,7 @@ import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Logo from "./assets/Logo.png";
 import Home from "./components/Home";
-
+import './App.css';
 
 const StyledButton = styled(Button)(({ theme, color = '' }) => ({
   color:'white',
