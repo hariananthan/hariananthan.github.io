@@ -3,7 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
+import { styled, ThemeProvider,createTheme } from '@mui/material/styles';
 import Logo from "./assets/Logo.png";
 import Home from "./components/Home";
 import './App.css';
@@ -15,8 +15,19 @@ const StyledButton = styled(Button)(({ theme, color = '' }) => ({
   },
 }));
 
+const THEME = createTheme({
+  typography: {
+   "fontFamily": `"Nunito", "Helvetica", "Arial", sans-serif`,
+   "fontSize": 16,
+   "fontWeightLight": 300,
+   "fontWeightRegular": 400,
+   "fontWeightMedium": 500
+  }
+});
+
 function App() {
   return (
+    <ThemeProvider theme={THEME}>
     <div className="App">
      <AppBar position="static" style={{ background: '#2E3B55' }}>
         <Toolbar>
@@ -25,7 +36,7 @@ function App() {
             variant="h6"          
             component="div"
           >
-          HARIANANTHAN          
+            HARIANANTHAN          
           </Typography>
           <Box       
             component="div"
@@ -39,6 +50,7 @@ function App() {
       </AppBar>
       <Home/>
     </div>
+    </ThemeProvider>
   );
 }
 
