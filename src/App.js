@@ -29,7 +29,7 @@ function App() {
   return (
     <ThemeProvider theme={THEME}>
     <div className="App">
-     <AppBar position="static" style={{ background: '#2E3B55' }}>
+     <AppBar position="sticky" style={{ background: '#2E3B55' }}>
         <Toolbar>
           <img src={Logo} className="icon" /> 
           <Typography
