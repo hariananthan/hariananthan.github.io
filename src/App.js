@@ -1,3 +1,4 @@
+import React,{useRef} from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -26,12 +27,16 @@ const THEME = createTheme({
 });
 
 function App() {
+
+  const projectsRef = useRef(null);
+  const homeRef = useRef(null);
+  const scrollToRef = (ref,offset) => window.scrollTo({behavior: "smooth", top: offset});
   return (
     <ThemeProvider theme={THEME}>
     <div className="App">
-     <AppBar position="sticky" style={{ background: '#2E3B55' }}>
+     <AppBar position="fixed" style={{ background: '#2E3B55' }}>
         <Toolbar>
-          <img src={Logo} className="icon" /> 
+          <img src={Logo} alt="logo" className="icon" /> 
           <Typography
             variant="h6"          
             component="div"
@@ -43,12 +48,12 @@ function App() {
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >          
           </Box>
-          <StyledButton variant="text" >Home</StyledButton>
-          <StyledButton variant="text" >Projects</StyledButton>
+          <StyledButton variant="text"   onClick={()=>scrollToRef(homeRef, 0)}>Home</StyledButton>
+          <StyledButton variant="text" onClick={()=>scrollToRef(projectsRef, (projectsRef.current.offsetTop-100))} >Projects</StyledButton>
           <StyledButton variant="text" >Portfolio</StyledButton>  
         </Toolbar>
       </AppBar>
-      <Home/>
+      <Home projectsRef={projectsRef}/>
     </div>
     </ThemeProvider>
   );

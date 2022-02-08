@@ -42,7 +42,7 @@ export default function About(){
                 component="div"
                 className="textShadowBlue"
                 >
-                    Experience |
+                    Experience : 
                 </Typography>
                 <Typography
                 variant="h6"          

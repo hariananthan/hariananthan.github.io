@@ -2,9 +2,10 @@ import React from "react";
 import AboveFold from "./AboveFold";
 import About from "./About";
 import Projects from "./Projects";
+import Certifications from "./Certifications";
 import './Home.css';
 
-export default function Home(){
+export default function Home(props){
 
     return(
         <div className="home">
@@ -13,7 +14,12 @@ export default function Home(){
           <br/><br/>
           <hr style={{ width:'75%',  margin: '0 auto'}}/>
           <br/><br/>
-          <Projects/>
+          <Projects projectsRef={props.projectsRef}/>
+          <br/><br/>
+            <hr style={{ width:'75%',  margin: '0 auto'}}/>       
+          <br/><br/>
+          <Certifications/>
+          <br/><br/>
         </div>
       );  
 }
