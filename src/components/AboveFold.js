@@ -1,7 +1,7 @@
 import React from "react";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+
 
 import './AboveFold.css';
 
@@ -68,16 +68,12 @@ export default function AboveFold(){
             </Box>
         </Box>
         <Paper class="intro" elevation="10">         
-            <Typography
-                variant="h2"          
-                component="div"
-                fontWeight="800"
-                lineHeight="2"
-            >
+            <span className="intro-text">
                 HI ! <br/>
                 I'm Hariananthan,<br/>
                 FULL STACK / UX Developer          
-            </Typography>
+            </span>
+
         </Paper>
         <svg class="arrow">
             <path class="a1" d="M0 0 L30 22 L60 0"></path>

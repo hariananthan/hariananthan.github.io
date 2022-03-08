@@ -2,3 +2,18 @@
     font-weight: bold !important;
     text-shadow: 4px 2px 0px #2e3b55;
 }
+.certificates{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+@media (max-width: 480px) {
+    .certifications{
+        margin-bottom: 12rem;
+    }
+    .certificates{
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+  }

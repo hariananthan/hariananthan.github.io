@@ -105,6 +105,7 @@ export default function About(){
         <Box sx={{
             display: 'flex',
             flexDirection: 'row',
+            flexWrap: 'wrap',
             '& > :not(style)': {
                 m: 1,
             },            
@@ -125,7 +126,8 @@ export default function About(){
             flexDirection: 'row',
             '& > :not(style)': {
                 m: 1,
-            },            
+            },       
+            flexWrap: 'wrap',     
             justifyContent: 'center'
         }}
         > 

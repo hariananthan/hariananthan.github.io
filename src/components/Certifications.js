@@ -24,15 +24,11 @@ export default function Certifications(){
                 >
                     Certifications
                 </Typography>
-                <Typography
-                variant="h6"          
-                component="div"
-                className="marginTop15"
-                >
-                    Microsoft Azure - Developing Solutions (Az-204) <br/>
-                    Google UX Design <br/>
-                    Cambridge English - Business English Certificate (BEC) Preliminary
-                </Typography>
+                <span className="certificates">
+                    * Microsoft Azure - Developing Solutions (Az-204) <br/>
+                    * Google UX Design <br/>
+                    * Cambridge English - Business English Certificate (BEC) Preliminary
+                </span>
           </Box>
         </div>
     )

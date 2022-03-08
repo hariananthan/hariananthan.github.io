@@ -220,7 +220,13 @@
     color: #fff;
     padding: 90px 20px;
     text-align: center;
+  
 
+}
+.intro-text{
+  font-size: 3.5rem;
+  line-height: 2;
+  font-weight: 700;
 }
 .arrow {
 	width: 60px;
@@ -249,4 +255,27 @@
 .arrow path.a1{	animation-delay:-1s; }
 .arrow path.a2{	animation-delay:-.5s; }
 .arrow path.a3{	animation-delay:0s; }
-        
+
+@media (max-width: 480px) {
+  .screen-container {
+   display:none;
+  }
+  .duck{
+    display:none;
+  }
+  .coffee-mug{
+    display: none;
+  }
+  .intro{
+    padding: 90px 22px;
+  }
+  .intro-text{
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+  .arrow{
+    left: 42%;
+    bottom: 50%;
+  }
+}        
