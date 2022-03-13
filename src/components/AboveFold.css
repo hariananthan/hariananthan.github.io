@@ -1,260 +1,225 @@
 .above-the-fold{
   margin-bottom: 140px;
 }
+
 .screen-container {
     padding:4em 4em 0em 4em;
   }
-  .monitor {
-    width:515px;
-    height: 300px;
-    border: solid 1em #333;
-    background-color: #2E3B55;
-    border-radius:.5em;
-  }
 
-  .stand:before {
+.monitor {
+  width:515px;
+  height: 300px;
+  border: solid 1em #333;
+  background-color: #2E3B55;
+  border-radius:.5em;
+}
+
+.stand:before {
+  content:"";
+  display:block;
+  position:relative;
+  background: #222;
+  width: 150px;
+  height: 50px;
+  top:382px;
+  left:185px;
+}
+.stand:after {
     content:"";
     display:block;
     position:relative;
-    background: #222;
-    width: 150px;
-    height: 50px;
-    top:382px;
-    left:185px;
-  }
-  .stand:after {
-     content:"";
-     display:block;
-     position:relative;
-     background:#333;
-     border-top-left-radius:.5em;
-     border-top-right-radius:.5em;
-     width: 300px;
-     height: 15px;
-     top: 50px;
-     left: 110px;
-  }
-  .typewriter-text{
-    margin-left: 150px;
-    animation-name: typewriter;
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation-duration: 10s;
-    animation-timing-function: steps(25, end);
-    animation-iteration-count: infinite;
-    color: #fff;
-  }
-  
-  .typewriter-text::after {
-    content: "|";
-    position: absolute;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(1, end);
-  }
-  
-  @keyframes typewriter {
-    0%,
-    50%,
-    100% {
-      width: 0;
-    }
-    10%,
-    40% {
-      width: 17em;
-    }
-  }
-  
-  @keyframes caret {
-    0%,
-    100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-
-  .duck {
-    margin-top: -20px !important;
-    margin-left: 90px !important;
-    width: 110px;
-    height: 100px;
-    z-index: 3;
+    background:#333;
+    border-top-left-radius:.5em;
+    border-top-right-radius:.5em;
+    width: 300px;
+    height: 15px;
+    top: 50px;
+    left: 110px;
 }
 
+.typewriter-text{
+  margin-left: 150px;
+  animation-name: typewriter;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+  color: #fff;
+}
+  
+.typewriter-text::after {
+  content: "|";
+  position: absolute;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+  
+@keyframes typewriter {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 17em;
+  }
+}
+  
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.duck {
+  margin-top: -20px !important;
+  margin-left: 90px !important;
+  width: 110px;
+  height: 100px;
+  z-index: 3;
+}
 .duck-head {
-    width: 50px;
-    height: 45px;
-    background: #fead26;
-    border-radius: 50%;
-    position: relative;
+  width: 50px;
+  height: 45px;
+  background: #fead26;
+  border-radius: 50%;
+  position: relative;
 }
-
 .duck-body {
-    width: 92px;
-    height: 50px;
-    background: #fead26;
-    border-radius: 50%;
-    position: relative;
-    top: -11%;
-    left: 10%;
+  width: 92px;
+  height: 50px;
+  background: #fead26;
+  border-radius: 50%;
+  position: relative;
+  top: -11%;
+  left: 10%;
 }
 .duck-eye {
-    width: 15%;
-    height: 20%;
-    border-radius: 50%;
-    background: #ffffff;
-    position: absolute;
-    top: 35%;
-    left: 18%;
+  width: 15%;
+  height: 20%;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 35%;
+  left: 18%;
 }
-
 .duck-pupil {
-    width: 75%;
-    height: 90%;
-    background: #272727;
-    border-radius: 45%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
+  width: 75%;
+  height: 90%;
+  background: #272727;
+  border-radius: 45%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
 }
-
 .duck-beak {
-    width: 50%;
-    height: 40%;
-    background: rgba(234, 31, 31, 0.7);
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: -25%;
-    z-index: -1;
+  width: 50%;
+  height: 40%;
+  background: rgba(234, 31, 31, 0.7);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  z-index: -1;
 }
-
-
 .duck-wing {
-    width: 50%;
-    height: 45%;
-    border-top-left-radius: 45%;
-    border-bottom-left-radius: 45%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    background: #ef9701;
-    position: absolute;
-    top: 15%;
-    left: 20%;
+  width: 50%;
+  height: 45%;
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: #ef9701;
+  position: absolute;
+  top: 15%;
+  left: 20%;
 }
 
 .duck-tail {
+  border-top: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 25px solid #fead26;
+  border-left: 10px solid transparent;
+  position: absolute;
+  right: -6%;
+  top: -3%;
+  -webkit-transform: rotate(32deg);
+  -ms-transform: rotate(32deg);
+  transform: rotate(32deg);
+}
 
-    border-top: 0px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 25px solid #fead26;
-    border-left: 10px solid transparent;
-    position: absolute;
-    right: -6%;
-    top: -3%;
-    -webkit-transform: rotate(32deg);
-    -ms-transform: rotate(32deg);
-    transform: rotate(32deg);
+.coffee-container {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: .05em .05em 3em 3em;
+}          
+.coffee:before {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 1em;
+  position: absolute;
+  left: -50%;
+  top: -.8em;
+  background: #6F4E37;
+  border-radius: 50%;
+}    
+.coffee {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.coffee-mug {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  margin-left: 280px !important;
+  border-radius: .05em .05em 3em 3em;
+  box-shadow: 0 0 0 0.05em #fff;
 }
 .coffee-mug:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 100%;
-    top: 11px;
-    width: 5px;
-    height: 8px;
-    box-shadow: 0 0 0 .5em #fff;
-    margin-left: .2em;
-    border-radius: 0 50% 50% 0;
-  }
-.coffee-mug {
-    position: relative;
-    width: 70px;
-    height: 40px;
-    margin-left: 280px !important;
-    border-radius: .05em .05em 3em 3em;
-    box-shadow: 0 0 0 0.05em #fff;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 11px;
+  width: 5px;
+  height: 8px;
+  box-shadow: 0 0 0 .5em #fff;
+  margin-left: .2em;
+  border-radius: 0 50% 50% 0;
 }
-    .coffee-container {
-      position: absolute;
-      z-index: 10;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #fff;
-      border-radius: .05em .05em 3em 3em;
-    }
-    
-    .coffee {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #fff;
 
-    }
-
-          
-    .coffee:before {
-        content: '';
-        display: block;
-        width: 200%;
-        height: 1em;
-        position: absolute;
-        left: -50%;
-        top: -.8em;
-        background: #6F4E37;
-        border-radius: 50%;
-      }
 .intro{
-    background-color: #008CBA;
-    color: #fff;
-    padding: 90px 20px;
-    text-align: center;
-  
-
+  background-color: #008CBA;
+  color: #fff;
+  padding: 90px 20px;
+  text-align: center;
 }
 .intro-text{
   font-size: 3.5rem;
   line-height: 2;
   font-weight: 700;
 }
-.arrow {
-	width: 60px;
-	height: 82px;
-	position: absolute; /* don't forget set container to relative */
-	left: 49%;
-	margin-left: 0px;
-	bottom: 5%;
-  z-index:999;
-}
-/* set arrow styles */
-.arrow path {
-	stroke: #ffffff;
-	stroke-width: 2px;
-	fill: transparent;	
-	animation: down 2s infinite;
-}
-/* arrow keyframe animation */
-@keyframes down{
-0% { opacity:0 }
-25% { opacity:1 }
-75% { opacity:0 }
-100% { opacity:0 }
-}
-/* arrow animation delay */
-.arrow path.a1{	animation-delay:-1s; }
-.arrow path.a2{	animation-delay:-.5s; }
-.arrow path.a3{	animation-delay:0s; }
 
 @media (max-width: 480px) {
   .screen-container {
