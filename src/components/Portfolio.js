@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
+import PortfolioContainer from "./PortfolioContainer";
 
 const StyledButton = styled(Button)(({ theme, color = '' }) => ({
     color:'white',
@@ -27,6 +28,7 @@ export default function Portfolio(props){
                     <StyledButton variant="text"><NavLink to="/" className="navLinks">Home</NavLink></StyledButton>  
                 </Toolbar>
           </AppBar>
+          <PortfolioContainer/>
         </>
     )
 }
