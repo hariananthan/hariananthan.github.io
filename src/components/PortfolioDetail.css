@@ -2,4 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2%;
+}
+.title-img{
+    height: 700px;
+    width: 100%;
+}
+.sub-title{
+    font-weight: 600;
 }

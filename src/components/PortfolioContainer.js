@@ -5,6 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import PortfolioDetail from './PortfolioDetail'
+import cafe from "../assets/cafe.jpg";
+import movie from "../assets/movie.jpg";
+import shelter from "../assets/shelter.jpg";
+
+
 import "./PortfolioContainer.css";
 
 function PortfolioCard(props){
@@ -15,7 +20,7 @@ function PortfolioCard(props){
         component="img"
             height="200px"
      width="350px"
-        image="../../public/Logo.png"
+        image={props.img}
         alt="portfolio Summary"
       />
     <CardContent>
@@ -39,9 +44,9 @@ export default function PortfolioContainer(){
     return(
       <div className="portfolio-container">
         <div className="portfolio-summary">
-            <PortfolioCard title="Coffee&Biscuits" portfolioSelected={portfolioSelected} />
-            <PortfolioCard title="Moviez" portfolioSelected={portfolioSelected}/>
-            <PortfolioCard title="Shelter" portfolioSelected={portfolioSelected}/>
+            <PortfolioCard title="Coffee&Biscuits" img={cafe} portfolioSelected={portfolioSelected} />
+            <PortfolioCard title="Moviez" img={movie} portfolioSelected={portfolioSelected}/>
+            <PortfolioCard title="Shelter" img={shelter} portfolioSelected={portfolioSelected}/>
         </div>
         <hr/>
           <PortfolioDetail  portfolioID={portfolioID}/>
