@@ -1,4 +1,5 @@
 import { portfolioData } from "../data/portfolioData";
+import Button from "@mui/material/Button";
 import "./PortfolioDetail.css";
 
 export default function PortfolioDetail(props){
@@ -8,61 +9,76 @@ export default function PortfolioDetail(props){
         (selectedPortfolio)?
         <div className="portfolio-detail">
             <h1>{selectedPortfolio.title}</h1><br/>
-            <img src={selectedPortfolio.titleImg} className="title-img"/>
+            <img src={selectedPortfolio.titleImg} alt="error" className="title-img"/>
             <h2><u>Problem Statement</u></h2>
             <span>{selectedPortfolio.problemStatement}</span><br/>
-            <div style={{margin: "20px 0px 20px -250px"}}>
-            <span><b><u>Duration </u>: </b>{selectedPortfolio.projectDuration}</span><br/>
-            <span><b><u>Role </u>: </b>{selectedPortfolio.role}</span><br/>
-            <span><b><u>Responsibilities </u>: </b>{selectedPortfolio.responsibilities}</span><br/>
+            <div className="sub-section">
+                <span><b>Duration : </b>{selectedPortfolio.projectDuration}</span><br/>
+                <span><b>Role : </b>{selectedPortfolio.role}</span><br/>
+                <span><b>Responsibilities : </b>{selectedPortfolio.responsibilities}</span><br/>
             </div>
             <h2><u>Goal Statement</u></h2>
             {selectedPortfolio.goalStatement}<br/>
-            <h2><u>Research</u></h2><br/>
-            <h2><u>Research Summary</u></h2>
+            <h2><u>Research</u></h2>
+            <div className="sub-section">
+            <h3><u>Research Summary</u></h3>
             {selectedPortfolio.researchSummary}<br/>
-            <h2><u>Pain points identified :</u></h2>
+            <h3><u>Pain points identified :</u></h3>
             <ul>
             {
                 selectedPortfolio.painPoints.map((point)=>(<li>{point}</li>))
             }
             </ul>
-            <br/>
-            <h2><u>Persona</u></h2><br/>
-            <span>Based on the user research conducted, a persona was created to best represent the user base and help inform design decisions</span>
-            <div style={{margin: "20px 0px 20px -250px"}}>
-            <span><b><u>Problem Statement </u>: </b>{selectedPortfolio.personaStatement}</span><br/>
             </div>
+            <h2><u>Persona</u></h2>
+            <span>Based on the user research conducted, a persona was created to best represent the user base and help inform design decisions</span>
+            <span><b>Problem Statement : </b>{selectedPortfolio.personaStatement}</span><br/><br/>
+            <img src={selectedPortfolio.personaImg} alt="error"/>
+
             <h2><u>Wire Framing</u></h2><br/>
+            <img src={selectedPortfolio.wireFrameImg} alt="error" /><br/>
+            <div className="wireframe-section">
             {selectedPortfolio.wireFraming.map((obj=>(
-            <><span>{obj.title}</span><br/>
+            <div><b><span>{obj.title}</span></b>
             <ul>
             <span>{obj.process.map(point=>(<li>{point}</li>))}</span>
             </ul>
-            </>)
+            <br/>
+            </div>)
             ))
-            }<br/>
-            <h2><u>Low-Fidelity prototype</u></h2><br/>
-            {selectedPortfolio.lowfi}<br/>
-            <h2><u>Testing</u></h2><br/>
+            }
+            </div>
+            <h2><u>Low-Fidelity prototype</u></h2>
+            {selectedPortfolio.lowfi}<br/><br/>
+            <img src={selectedPortfolio.lowfiImg} alt="error"/>
+            <h2><u>Testing</u></h2>
             <span>Two rounds of usability study were conducted. The first one was for low-fi designs which helped to identify enhancements early on to the design. The second one was for hi-fi mockups which was helpful to refine the designs to bring it to the final stage. The feedback from testing revealed the following,</span><br/>
+            <div className="sub-section">
             <ul>
                 {selectedPortfolio.testing.map((point)=>(<li>{point}</li>))}
             </ul>
+            </div>
             <br/>
-            <h2><u>Iteration and Mockups</u></h2><br/>
+
+            <h2><u>Iteration and Mockups</u></h2>
             <span>The findings from the usability test prompted iteration of the designs to improve usability. Once the user feedback was incorporated , the polished mockups were created.</span><br/>
             <ul>
-            {selectedPortfolio.mockups.map((point)=>(<li>{point}</li>))}<br/>
+            {selectedPortfolio.mockups.map((point)=>(<li>{point}</li>))}
             </ul>
-            <h2><u>High fidelity prototype</u></h2><br/>
+
+            <h2><u>High fidelity prototype</u></h2>
             <span>A hi-fi prototype which simulates the main user flow from home page to booking confirmation was created with the finalized versions of the mockup</span><br/>
-            <h2><u>Takeaways</u></h2><br/>
-            <h2><u>Impact</u></h2><br/>
-            {selectedPortfolio.impact}<br/>
-            {selectedPortfolio.quote}<br/>
-            <h2><u>Learning</u></h2><br/>
-            {selectedPortfolio.learning}<br/>
+            <img src={selectedPortfolio.hifiImg} alt="error" /><br/>
+            
+            <h2><u>Takeaways</u></h2>
+            <div className="sub-section">
+                <h3><u>Impact</u></h3>
+                {selectedPortfolio.impact}<br/>
+                <i>"{selectedPortfolio.quote}"</i><br/>
+                <h3><u>Learning</u></h3>
+                {selectedPortfolio.learning}<br/>
+            </div>
+            <Button className="top-btn" variant="contained">Back to top </Button>
         </div>
         :
         <></>

@@ -2,6 +2,12 @@
 import cafe from "../assets/cafe.jpg";
 import movie from "../assets/movie.jpg";
 import shelter from "../assets/shelter.jpg";
+import cafePersona from "../assets/coffeeBiscuits/persona.png";
+import cafeWireFrame from "../assets/coffeeBiscuits/wireframe.png";
+import cafeLowProto from "../assets/coffeeBiscuits/lofi-prototype.png";
+import cafeHiProto from "../assets/coffeeBiscuits/hifi-prototype.png";
+import cafeMockup1 from "../assets/coffeeBiscuits/mockup1.png";
+import cafeMockup2 from "../assets/coffeeBiscuits/mockup2.png";
 
 export const portfolioData = {
     "Coffee&Biscuits":{
@@ -18,6 +24,7 @@ export const portfolioData = {
                       "Busy users, working adults do not have the time to wait as they have limited amount of break time"
                     ],
         personaStatement: "Jack is a busy delivery executive and a coffee lover, who needs snacks and coffee without having to wait due to his limited break timing",
+        personaImg : cafePersona,
         wireFraming: [{ title: "The time reservation screen(pic 1)",
                         process:["The time reservation screens were designed based on user research and findings",
                                 "Dropdowns were provided for the user to select the place and date",
@@ -29,7 +36,9 @@ export const portfolioData = {
                       process: ["Displaying the details the user selected on the previous sections",
                                 "A button to finalize the booking process"]
                     }],
+        wireFrameImg : cafeWireFrame,
         lowfi: "A low-fi prototype was created to simulate the user flow from homepage to booking confirmation.",
+        lowfiImg: cafeLowProto,
         testing: ["The user was not able to find the right button",
                  "The user wanted more pleasing colors",
                  "Wanted to see a calendar popup",
@@ -39,6 +48,8 @@ export const portfolioData = {
                 ],
         mockups: ["The time reservation screen was modified to include the calendar popup and removed the time slots display at the bottom of the page. This allowed to simplify the design",
                   "A map of the location of the cafe branch that the user booked their seat was added to enable them to find the location easily"],
+        mockupsImg: [cafeMockup1, cafeMockup2],
+        hifiImg : cafeHiProto,
         impact: "The app is very useful for booking time slots anytime for customers of the cafe at their nearest branch. The app is designed in a way to help the user to book a slot as easier and fast as possible",
         quote: "I\'m really excited and waiting to use this app. I think I have found my new favorite cafe",
         learning: "Working on the designs made me realize that users would rather prefer the design and the process to be simple rather than being fancy. The final designs have been made after taking that into account. This being my first project I learned how the design process works end to end."
