@@ -1,10 +1,21 @@
 import { portfolioData } from "../data/portfolioData";
+import { styled, useTheme  } from '@mui/material/styles';
 import Button from "@mui/material/Button";
 import "./PortfolioDetail.css";
 
+const StyledButton = styled(Button)(({ theme, color = '' }) => ({
+    color:'white',
+    backgroundColor: '#2E3B55',
+    marginTop: '50px',
+    ':hover': {
+      color: '#008CBA',
+    },
+  }));
+
+
 export default function PortfolioDetail(props){
     const selectedPortfolio = props.portfolioID !== "" ? portfolioData[props.portfolioID]: null;
-
+    const scrollToTop = () => window.scrollTo({behavior: "smooth", top: 0});
     return(
         (selectedPortfolio)?
         <div className="portfolio-detail">
@@ -48,6 +59,14 @@ export default function PortfolioDetail(props){
             ))
             }
             </div>
+            { (selectedPortfolio.responsive)?
+            <div className="responsive-section">
+            <h2><u>Responsive Design</u></h2>
+            <h3><u>{selectedPortfolio.responsive.title}</u></h3>
+            {selectedPortfolio.responsive.changes.map((point)=>(<li>{point}</li>))}<br/>
+            <img src={selectedPortfolio.responsive.responsiveImg} alt="error"/>
+            </div>: null
+            }
             <h2><u>Low-Fidelity prototype</u></h2>
             {selectedPortfolio.lowfi}<br/><br/>
             <img src={selectedPortfolio.lowfiImg} alt="error"/>
@@ -62,10 +81,17 @@ export default function PortfolioDetail(props){
 
             <h2><u>Iteration and Mockups</u></h2>
             <span>The findings from the usability test prompted iteration of the designs to improve usability. Once the user feedback was incorporated , the polished mockups were created.</span><br/>
+            <div className="mockup-section">
             <ul>
-            {selectedPortfolio.mockups.map((point)=>(<li>{point}</li>))}
+            {selectedPortfolio.mockups.map((mockup)=>
+            (<div>
+                <li>{mockup.brief}</li><br/>
+                <img src={mockup.mockupImg} alt="error"/>
+                <br/><br/><br/><br/>
+            </div>
+            ))}
             </ul>
-
+            </div>
             <h2><u>High fidelity prototype</u></h2>
             <span>A hi-fi prototype which simulates the main user flow from home page to booking confirmation was created with the finalized versions of the mockup</span><br/>
             <img src={selectedPortfolio.hifiImg} alt="error" /><br/>
@@ -78,7 +104,7 @@ export default function PortfolioDetail(props){
                 <h3><u>Learning</u></h3>
                 {selectedPortfolio.learning}<br/>
             </div>
-            <Button className="top-btn" variant="contained">Back to top </Button>
+            <StyledButton variant="text" onClick={()=>scrollToTop()}>Back to Top</StyledButton>
         </div>
         :
         <></>

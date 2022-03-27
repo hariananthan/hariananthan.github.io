@@ -9,6 +9,22 @@ import cafeHiProto from "../assets/coffeeBiscuits/hifi-prototype.png";
 import cafeMockup1 from "../assets/coffeeBiscuits/mockup1.png";
 import cafeMockup2 from "../assets/coffeeBiscuits/mockup2.png";
 
+import moviePersona from "../assets/moviez/persona.png";
+import movieWireFrame from "../assets/moviez/wireframe.png";
+import movieResponsive from "../assets/moviez/responsive.png";
+import movieLowProto from "../assets/moviez/lofi-prototype.png";
+import movieHiProto from "../assets/moviez/hifi-prototype.png";
+import movieMockup1 from "../assets/moviez/mockup1.png";
+import movieMockup2 from "../assets/moviez/mockup2.png";
+
+import shelterPersona from "../assets/shelter/persona.png";
+import shelterWireFrame from "../assets/shelter/wireframe.png";
+import shelterResponsive from "../assets/shelter/responsive.png";
+import shelterLowProto from "../assets/shelter/lofi-prototype.png";
+import shelterHiProto from "../assets/shelter/hifi-prototype.png";
+import shelterMockup1 from "../assets/shelter/mockup1.png";
+import shelterMockup2 from "../assets/shelter/mockup2.png";
+
 export const portfolioData = {
     "Coffee&Biscuits":{
         title: "Coffee&Biscuits",
@@ -46,9 +62,10 @@ export const portfolioData = {
                  "The list of time slots displayed need to be simplified",
                  "The user was unable to find the location of the store they booked their seats"
                 ],
-        mockups: ["The time reservation screen was modified to include the calendar popup and removed the time slots display at the bottom of the page. This allowed to simplify the design",
-                  "A map of the location of the cafe branch that the user booked their seat was added to enable them to find the location easily"],
-        mockupsImg: [cafeMockup1, cafeMockup2],
+        mockups: [{brief:"The time reservation screen was modified to include the calendar popup and removed the time slots display at the bottom of the page. This allowed to simplify the design",
+                    mockupImg: cafeMockup1},
+                  {brief:"A map of the location of the cafe branch that the user booked their seat was added to enable them to find the location easily",
+                  mockupImg: cafeMockup2}],
         hifiImg : cafeHiProto,
         impact: "The app is very useful for booking time slots anytime for customers of the cafe at their nearest branch. The app is designed in a way to help the user to book a slot as easier and fast as possible",
         quote: "I\'m really excited and waiting to use this app. I think I have found my new favorite cafe",
@@ -56,7 +73,7 @@ export const portfolioData = {
     },
     "Moviez":{
         title: "Moviez",
-        titleImg : {movie},
+        titleImg : movie,
         problemStatement: "Moviez is a local high-end theater which showcases new movies in high quality. It is well known in the city and has a wide user base. The users of this theater have a common complaint that they are unaware of any currently showing or upcoming movies. This causes some frustration and loss of interest for the users. The management of Moviez would like to solve this problem and attract more movie lovers",
         projectDuration: "October 2021 to November 2021",
         role: "UX designer & researcher",
@@ -67,7 +84,8 @@ export const portfolioData = {
                     "Users need information related to a movie consolidated in one place",
                     "Users are frustrated when they watch a movie that is not as good as they have been led to think"
                     ],
-        problemStatement: "Jane is a busy corporate analyst and a movie goer who needs information related to movies without having to go directly to the theater",
+        personaStatement: "Jane is a busy corporate analyst and a movie goer who needs information related to movies without having to go directly to the theater",
+        personaImg : moviePersona,
         wireFraming: [{ title: "The home screen (pic 1)",
                         process:["A hero image carousel to showcase featured movies placed above the fold.",
                                  "A header section which contains navigation links and profile link",
@@ -78,27 +96,34 @@ export const portfolioData = {
                       process: ["Different sections which showcase information about cast, related videos and reviews",
                       "List of recommended movies at the bottom which redirect to the corresponding detailed page"]
                     }],
+        wireFrameImg : movieWireFrame,                 
         responsive:{
             title:"Responsive Homepage",
             changes: ["Responsive screens were designed to fit mobile devices",
             "A burger menu was added to contain navigation links",
-            "All images were resized and provided a horizontal scroll to accommodate screen width"]
+            "All images were resized and provided a horizontal scroll to accommodate screen width"],
+            responsiveImg: movieResponsive
         },
         lowfi: "A low-fi prototype was created to simulate the user flow for the core functionality of the platform.",
+        lowfiImg: movieLowProto,
         testing: ["The user was not able to filter movies when searching",
                 "The user was confused not to see a rating system provided",
                 "The user wanted to see contact information for the theater",
                 "The user was frustrated having to navigate many times in the search"
                 ],
-        mockups: ["The footer was included with contact information for the theater along with their social media links",
-                 "In the search page pagination was added to help navigation easier and faster. Filters and sorting functionality was also added to enhance the search"],
+        mockups: [{ brief: "The footer was included with contact information for the theater along with their social media links",
+                    mockupImg: movieMockup1},
+                 { brief: "In the search page pagination was added to help navigation easier and faster. Filters and sorting functionality was also added to enhance the search",
+                    mockupImg: movieMockup2
+                }],
+        hifiImg : movieHiProto,
         impact: "Creating a responsive digital solution for users to gain access to movie previews and other information greatly enhanced the movie watching experience. It is expected to attract more movie goers and help them in choosing movies that they would enjoy",
         quote: "",
         learning: "Working on a responsive design requirement helped me learn how to make use of differing device screen sizes and best practices for doing so. I learned that it\'s a challenging task to keep a consistent look across devices while making sure the important functionalities are also included"
     },
     "Shelter":{
         title: "Shelter",
-        titleImg: {shelter},
+        titleImg: shelter,
         problemStatement: "A roof over one\'s head is a basic necessity for every human being. But in reality there are countless homeless people struggling to find a proper place to stay. It gets more difficult for them during harsh weather conditions. Many Non-profit Organizations strive to help the homeless, but there is no coordinated effort among the current active organizations.",
         projectDuration: "November 2021 to December 2021",
         role: "UX designer & researcher",
@@ -109,7 +134,8 @@ export const portfolioData = {
                     "Users cannot coordinate efforts easily",
                     "It\'s difficult to identify and reach out to many homeless quickly and in an organized manner"
                     ],
-        problemStatement: "Larry is a caring social work and founder of an NGO who needs a place to recruit volunteers for his efforts to help the homeless through his NGO",
+        personaStatement: "Larry is a caring social work and founder of an NGO who needs a place to recruit volunteers for his efforts to help the homeless through his NGO",
+        personaImg : shelterPersona,
         wireFraming: [{ title: "The home screen (pic 1)",
                         process:[
                                 "A burger menu to encapsulate navigation links of the application",
@@ -120,21 +146,27 @@ export const portfolioData = {
                       process: ["A search functionality to locate a help center or NGO in the preferred area",
                       "A zip search input to make the search more accurate"]
                     }],
+        wireFrameImg : shelterWireFrame,
         responsive:{
             title:"Responsive Homepage",
-            changes: ["",
-            "",
-            ""]
+            changes: ["Responsive designs were created for desktop, mobile and tablets",
+            "A burger menu was added to contain navigation links",
+            "Content was positioned according to screen size"],
+            responsiveImg : shelterResponsive
         },
         lowfi: "A low-fi prototype was created to simulate the user flow for the core functionality of the platform",
+        lowfiImg: shelterLowProto,
         testing: ["The users wanted a recurring payment option",
                     "The users were frustrated not to find a confirmation page before payment",
                     "The users wanted a more accurate search feature",
                     "The users were confused with the card payment selection"
                 ],
-        mockups: ["Clear images and confirmation screens were added to enhance usability",
-                "A confirmation screen was added to review the details before payment"
+        mockups: [{brief:"Clear images and confirmation screens were added to enhance usability",
+                mockupImg: shelterMockup1},
+                {brief:"A confirmation screen was added to review the details before payment",
+                mockupImg: shelterMockup2},
                 ],
+        hifiImg : shelterHiProto,
         impact: "The research participants felt that this is a very useful app that will help them reach out to the community and do good to the society by helping those in need. It will also help coordinate efforts to maximize the benefit to the homeless community",
         quote: "",
         learning: "Working on a responsive design requirement that focused on social good helped me learn responsibility and taught me how to give back to the community in a useful way. I learned that design for social good can be a really fulfilling and challenging task. The designs for such a task require clear inputs from a large user group dedicated to serve the community.Creating designs for 3 different screen sizes helped me learn how to apply different skills required"
