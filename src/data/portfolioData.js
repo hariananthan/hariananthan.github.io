@@ -29,11 +29,11 @@ export const portfolioData = {
     "Coffee&Biscuits":{
         title: "Coffee&Biscuits",
         titleImg : cafe,
-        problemStatement: "With their wide variety of hot beverages and pastries cafes are becoming increasingly popular.People from all respects of life visit cafes on a regular basis.One such cafe is \'Coffee&Biscuits\'. Coffee&Biscuits are a multi branch cafe spread out throughout the state and offer high quality service to the customers. Due to popular demand, customers usually have a long waiting time before they are served or get a seat. This causes the cafe to lose business as well as causes customer dissatisfaction. Coffee&Biscuits would like to solve this problem by opting for a digital solution that optimizes its serving capacity to its fullest.",
+        problemStatement: "With their wide variety of hot beverages and pastries cafes are becoming increasingly popular.People from all respects of life visit cafes on a regular basis.One such cafe is 'Coffee&Biscuits'. Coffee&Biscuits are a multi branch cafe spread out throughout the state and offer high quality service to the customers. Due to popular demand, customers usually have a long waiting time before they are served or get a seat. This causes the cafe to lose business as well as causes customer dissatisfaction. Coffee&Biscuits would like to solve this problem by opting for a digital solution that optimizes its serving capacity to its fullest.",
         projectDuration: "September 2021 to October 2021",
         role: "UX designer & researcher",
         responsibilities: "Competitive audit, Paper & Digital wireframes, usability testing, low-fi &hi-fi prototyping, Gathering feedback, Iterating on designs, accessibility testing",
-        goalStatement: "Design an app for \'Coffee&biscuits\' to allow users to book their seats at the time they need.\'Coffee&Biscuits\' is a mobile app that allows users to reserve seats based on time slots available. Users can book their seats,time,branch and avoid waiting time in any of the cafe\'s branches",
+        goalStatement: "Design an app for 'Coffee&biscuits' to allow users to book their seats at the time they need.'Coffee&Biscuits' is a mobile app that allows users to reserve seats based on time slots available. Users can book their seats,time,branch and avoid waiting time in any of the cafe's branches",
         researchSummary: "Initial interviews were conducted with a diverse background of users to understand the difficulties faced by cafe users/consumers. The interviews suggested that majority of the users did not like to wait long for a table or get frustrated that they have to leave when they could not find a table. The cafe was also not satisfied with losing potential regular customers.",
         painPoints: [ "Users do not have facility to book specific time slots that they need",
                       "Users are frustrated having to wait for a long time to get a seat",
@@ -68,7 +68,7 @@ export const portfolioData = {
                   mockupImg: cafeMockup2}],
         hifiImg : cafeHiProto,
         impact: "The app is very useful for booking time slots anytime for customers of the cafe at their nearest branch. The app is designed in a way to help the user to book a slot as easier and fast as possible",
-        quote: "I\'m really excited and waiting to use this app. I think I have found my new favorite cafe",
+        quote: "I'm really excited and waiting to use this app. I think I have found my new favorite cafe",
         learning: "Working on the designs made me realize that users would rather prefer the design and the process to be simple rather than being fancy. The final designs have been made after taking that into account. This being my first project I learned how the design process works end to end."
     },
     "Moviez":{
@@ -118,13 +118,12 @@ export const portfolioData = {
                 }],
         hifiImg : movieHiProto,
         impact: "Creating a responsive digital solution for users to gain access to movie previews and other information greatly enhanced the movie watching experience. It is expected to attract more movie goers and help them in choosing movies that they would enjoy",
-        quote: "",
-        learning: "Working on a responsive design requirement helped me learn how to make use of differing device screen sizes and best practices for doing so. I learned that it\'s a challenging task to keep a consistent look across devices while making sure the important functionalities are also included"
+        learning: "Working on a responsive design requirement helped me learn how to make use of differing device screen sizes and best practices for doing so. I learned that it's a challenging task to keep a consistent look across devices while making sure the important functionalities are also included"
     },
     "Shelter":{
         title: "Shelter",
         titleImg: shelter,
-        problemStatement: "A roof over one\'s head is a basic necessity for every human being. But in reality there are countless homeless people struggling to find a proper place to stay. It gets more difficult for them during harsh weather conditions. Many Non-profit Organizations strive to help the homeless, but there is no coordinated effort among the current active organizations.",
+        problemStatement: "A roof over one's head is a basic necessity for every human being. But in reality there are countless homeless people struggling to find a proper place to stay. It gets more difficult for them during harsh weather conditions. Many Non-profit Organizations strive to help the homeless, but there is no coordinated effort among the current active organizations.",
         projectDuration: "November 2021 to December 2021",
         role: "UX designer & researcher",
         responsibilities: "Competitive audit, Paper & Digital wireframes, usability testing, low-fi &hi-fi prototyping, Gathering feedback, Iterating on designs, accessibility testing",
@@ -132,14 +131,14 @@ export const portfolioData = {
         researchSummary: "Initial interviews were conducted with a diverse background of users to understand the requirements for movie goers.The interviews revealed that although there are a number of NGOs helping the homeless they find it difficult for data collection, recruiting volunteers and coordinating efforts",
         painPoints: [ "Users cannot easily recruit volunteers",
                     "Users cannot coordinate efforts easily",
-                    "It\'s difficult to identify and reach out to many homeless quickly and in an organized manner"
+                    "It's difficult to identify and reach out to many homeless quickly and in an organized manner"
                     ],
         personaStatement: "Larry is a caring social work and founder of an NGO who needs a place to recruit volunteers for his efforts to help the homeless through his NGO",
         personaImg : shelterPersona,
         wireFraming: [{ title: "The home screen (pic 1)",
                         process:[
                                 "A burger menu to encapsulate navigation links of the application",
-                                "A call to action button at the front and center to emphasis it\'s importance"
+                                "A call to action button at the front and center to emphasis it's importance"
                                 ]
                     },
                     { title: "Find a shelter screen(pic 2)",
@@ -168,7 +167,6 @@ export const portfolioData = {
                 ],
         hifiImg : shelterHiProto,
         impact: "The research participants felt that this is a very useful app that will help them reach out to the community and do good to the society by helping those in need. It will also help coordinate efforts to maximize the benefit to the homeless community",
-        quote: "",
         learning: "Working on a responsive design requirement that focused on social good helped me learn responsibility and taught me how to give back to the community in a useful way. I learned that design for social good can be a really fulfilling and challenging task. The designs for such a task require clear inputs from a large user group dedicated to serve the community.Creating designs for 3 different screen sizes helped me learn how to apply different skills required"
     },
 }

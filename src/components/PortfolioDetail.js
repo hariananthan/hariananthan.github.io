@@ -1,14 +1,16 @@
 import { portfolioData } from "../data/portfolioData";
-import { styled, useTheme  } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import Button from "@mui/material/Button";
 import "./PortfolioDetail.css";
 
 const StyledButton = styled(Button)(({ theme, color = '' }) => ({
     color:'white',
     backgroundColor: '#2E3B55',
-    marginTop: '50px',
+    textAlign: 'center',
+    margin: '50px 30px',
     ':hover': {
       color: '#008CBA',
+      backgroundColor: '#2E3B55',
     },
   }));
 
@@ -82,12 +84,12 @@ export default function PortfolioDetail(props){
             <h2><u>Iteration and Mockups</u></h2>
             <span>The findings from the usability test prompted iteration of the designs to improve usability. Once the user feedback was incorporated , the polished mockups were created.</span><br/>
             <div className="mockup-section">
-            <ul>
+            <ul className="mockup-list">
             {selectedPortfolio.mockups.map((mockup)=>
             (<div>
                 <li>{mockup.brief}</li><br/>
-                <img src={mockup.mockupImg} alt="error"/>
-                <br/><br/><br/><br/>
+                <img src={mockup.mockupImg} className="mockupImg" alt="error"/>
+                <br/><br/>
             </div>
             ))}
             </ul>
@@ -100,11 +102,17 @@ export default function PortfolioDetail(props){
             <div className="sub-section">
                 <h3><u>Impact</u></h3>
                 {selectedPortfolio.impact}<br/>
-                <i>"{selectedPortfolio.quote}"</i><br/>
+                { (selectedPortfolio.quote)?
+                    <><i>"{selectedPortfolio.quote}"</i><br/></>
+                : null
+                }
                 <h3><u>Learning</u></h3>
                 {selectedPortfolio.learning}<br/>
             </div>
+            <div className="backtoTop-btn">
             <StyledButton variant="text" onClick={()=>scrollToTop()}>Back to Top</StyledButton>
+            </div>
+
         </div>
         :
         <></>

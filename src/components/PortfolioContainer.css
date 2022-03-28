@@ -13,3 +13,31 @@
     height: 200px;
     width: 350px;
 }
+.cardImg{
+    height:200px;
+    width:350px;
+}
+
+@media (max-width: 480px) {
+
+    .portfolio-summary{    
+        margin-top: 130px;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 50%;
+    }
+    .portfolio-card{
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .cardImg{
+        height:200px;
+        width:350px !important;
+    }
+}

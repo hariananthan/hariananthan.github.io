@@ -18,10 +18,9 @@ function PortfolioCard(props){
     <Card sx={{ maxWidth: 345 }} id={props.title} onClick={()=>props.portfolioSelected(props.title)}>
       <CardMedia
         component="img"
-            height="200px"
-     width="350px"
         image={props.img}
         alt="portfolio Summary"
+        className="cardImg"
       />
     <CardContent>
         <Box sx={{display: 'flex', justifyContent: 'space-around'}}>
