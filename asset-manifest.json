@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ae483a0.css",
-    "main.js": "/static/js/main.0af4a889.js",
+    "main.css": "/static/css/main.dc48e0ea.css",
+    "main.js": "/static/js/main.1da72c99.js",
     "static/js/787.86e70ff7.chunk.js": "/static/js/787.86e70ff7.chunk.js",
+    "static/media/shelter.jpg": "/static/media/shelter.e4ae355610dc4b107b82.jpg",
+    "static/media/cafe.jpg": "/static/media/cafe.4419a1f2f9378f206d32.jpg",
+    "static/media/movie.jpg": "/static/media/movie.e3584a93c27050bfae8f.jpg",
+    "static/media/persona.png": "/static/media/persona.6966a29edbd11a4f39bb.png",
+    "static/media/responsive.png": "/static/media/responsive.90480959aecdacb187fb.png",
+    "static/media/hifi-prototype.png": "/static/media/hifi-prototype.9af083f0ea26287557f0.png",
+    "static/media/mockup1.png": "/static/media/mockup1.44fbaed443931422e632.png",
+    "static/media/mockup2.png": "/static/media/mockup2.2b04881abf790865c40a.png",
+    "static/media/lofi-prototype.png": "/static/media/lofi-prototype.9e53d031718595454f94.png",
+    "static/media/wireframe.png": "/static/media/wireframe.e78e9e98246d53139f9a.png",
     "index.html": "/index.html",
-    "main.6ae483a0.css.map": "/static/css/main.6ae483a0.css.map",
-    "main.0af4a889.js.map": "/static/js/main.0af4a889.js.map",
+    "main.dc48e0ea.css.map": "/static/css/main.dc48e0ea.css.map",
+    "main.1da72c99.js.map": "/static/js/main.1da72c99.js.map",
     "787.86e70ff7.chunk.js.map": "/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ae483a0.css",
-    "static/js/main.0af4a889.js"
+    "static/css/main.dc48e0ea.css",
+    "static/js/main.1da72c99.js"
   ]
 }
