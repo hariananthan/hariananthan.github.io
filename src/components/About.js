@@ -21,7 +21,7 @@ export default function About(){
                 component="div"
                 align="center"
                 >
-                    I'm a full stack developer with <b>2.5+</b> years of experience. I'm <b> Microsoft Azure</b> and <b>Google UX</b> certified with entry level experience in UX design.
+                    I'm a full stack developer with <b>3.5+</b> years of experience. I'm <b> Microsoft Azure</b> and <b>Google UX</b> certified with entry level experience in UX design.
                 </Typography>
           </Box>
           <br/><br/><br/>
@@ -49,7 +49,7 @@ export default function About(){
                 component="div"
                 className="marginTop15"
                 >
-                    2.5+ years as Software Engineer in <b>Mr.Cooper</b>
+                    3.5+ years as Software Engineer in <b>Mr.Cooper</b>
                 </Typography>
           </Box>
           <br/><br/>
